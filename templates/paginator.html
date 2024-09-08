@@ -1,0 +1,12 @@
+{% if movies.has_previous %}<a
+  href="?page={{ movies.previous_page_number }}"
+  class="pagination"
+  >Previous</a
+>{% endif %} <br />
+Page: {{ movies.number }} of {{ movies.paginator.num_pages }} <br />
+{% if movies.has_next %}<a
+  href="?page={{ movies.next_page_number }}"
+  class="pagination"
+  >Next</a
+>
+{% endif %} <br />
